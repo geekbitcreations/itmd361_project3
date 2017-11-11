@@ -23,7 +23,7 @@ function init()
 		icon: '/images/geekbiticon.png'
 	});
 
-	var contentString = '<h1>Bristol Renaissance Faire</h1>';
+	var contentString = '<h1>Six Flags Great America</h1><p>Best places here are Hurricane Harbor, the Whizzer, American Eagle, the Viper, Dark Knight, and Justice League.';
 
 	var infowindow = new google.maps.InfoWindow({
       content: contentString
