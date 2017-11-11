@@ -9,7 +9,7 @@
     //var geekbitplaces = new google.maps.LatLng(42.3704366,-87.938236);
     var geekplaces = {lat: 42.3704366, lng: -87.938236}
     var mapOptions = {
-      center: geekbitplaces,
+      center: geekplaces,
       zoom: 15,
       mapTypeId: google.maps.MapTypeId.SATELLITE,
       mapTypeControlOptions: {
