@@ -1,0 +1,349 @@
+/* Style sheet for my project 2 of my portfolio. Added CSS code to my portfolio design. */
+
+/* Navigation and banner CSS layout for all of the pages */
+
+body {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#navmenu {
+  background-color: #E0EBEE;
+  /*background-color: #FFFFFF;*/
+  position: relative;
+  width: 100%;
+  top: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#navmenu ul {
+  list-style-type: none;
+  margin-left: 565px;
+  padding: 0;
+  overflow: hidden;
+}
+
+#navmenu ul li {
+  float: left;
+  text-align: center;
+}
+
+#navmenu ul li a {
+  display: block;
+  padding: 20px;
+  font-size: 30px;
+  color: #227CA2;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Khand', sans-serif;
+}
+
+#navmenu ul li a:hover {
+  background-color: #C3D3DA;
+  color: #227CA2;
+}
+
+#banner {
+  width: 100%;
+  height: 100px;
+  opacity: 0.6;
+}
+
+.myheader {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  text-align: center;
+  padding: 10px;
+}
+
+.headerport {
+  font-family: 'Khand', sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  text-align: center;
+  color: grey;
+  padding: 10px;
+}
+
+footer {
+  display: block;
+  clear: both;
+  background-color: #E0EBEE;
+  text-align: center;
+  padding: 5px 10px;
+  /*width: 100%;*/
+  height: 40px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+footer p{
+  text-align: center;
+}
+
+/* CSS layout for the homepage. */
+
+#intro {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.about {
+  width: 98%;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.column {
+  float: left;
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#left {
+  width: 35%;
+  float: left;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#right1 {
+  width: 65%;
+  float: right;
+  position: relative;
+  top: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#right2 {
+  width: 65%;
+  float: right;
+  position: relative;
+  top: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#hangouts {
+			width: 700px;
+			height: 500px;
+			background-color: #ccc;
+			margin: 30px auto;
+		}
+
+/* CSS layout for the projects page. */
+main {
+  max-width: 1500px;
+}
+
+#comart {
+  width: 100%;
+  height: 900px;
+}
+ 
+#photo {
+  width: 100%;
+  height: 900px;
+}
+ 
+#anime {
+  width: 100%;
+  height: 800px;
+}
+ 
+#print {
+  width: 100%;
+  height: 900px;
+}
+ 
+#web {
+  width: 100%;
+  height: 1260px;
+}
+ 
+.gallery {
+  /*margin: 10px;
+  border: 2px solid #CCCCCC;
+  float: left;
+  width: 310px;
+  margin-left: 20px;*/
+  width: 350px;
+  height: 360px;
+  margin-left: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.gallery img {
+  width: 300px;
+  height: 250px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  /*float: left;*/
+}
+
+.caption {
+  padding: 5px;
+  text-align: left;
+  /*text-indent: 15px;*/
+  font-size: 13px;
+  margin-left: 18px;
+  width: 310px;
+  font-family: Arial, sans-serif;
+}
+
+.work {
+  margin: auto;
+}
+
+#animation {
+  list-style-type: none;
+}
+
+.video {
+  margin: auto;
+  padding: 6px 6px;
+  width: 400px;
+  height: 300px;
+  float: left;
+  margin-left: 15px;
+  margin-top: 15px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* CSS layout for the resume page. */
+
+.subject {
+  display: block;
+  background-color: #227CA2;
+  position: relative;
+  width: 1470px;
+  top: 0;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Khand', sans-serif;
+}
+
+.sectionhead {
+  border: 3px solid #227CA2;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+.place {
+  margin-top: 5px;
+  margin-bottom: 5px; 
+}
+
+.descrip {
+  text-align: left;
+  width: 950px;
+  position: relative;
+  margin-left: 280px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+/* General CSS layout for text, images, paragraphs, lists, etc. */
+
+h1 {
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  text-shadow: 2px 2px #B6B5B5;
+}
+
+h2, h3, h4 {
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Khand', sans-serif;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 400px;
+  height: 300px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  /*font: 16px/20px;*/
+  font-size: 16px;
+}
+
+ul {
+  font-family: Arial, sans-serif;
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  margin-left: 5px;
+}
+
+a:link {
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  color: #227CA2
+}
+
+a:visited {
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  color: #A1E0F3;
+}
+
+a:hover {
+  font-family: Arial, sans-serif;
+  text-decoration: underline;
+  color: #C3D3DA;
+}
+
+a:active {
+  font-family: Arial, sans-serif;
+  text-decoration: underline;
+}
+
