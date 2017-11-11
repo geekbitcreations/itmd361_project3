@@ -1,4 +1,3 @@
-
 <script>
   function initMap()
   {
@@ -26,7 +25,7 @@
       icon: '/images/geekbiticon.png'
     });
 
-    var contentString = '<h1>Six Flags Great America</h1><p>Best places here are Hurricane Harbor, the Whizzer, American Eagle, the Viper, Dark Knight, and Justice League.';
+    var contentString = '<h1>Six Flags Great America</h1><p>Best places here are Hurricane Harbor, the Whizzer, American Eagle, the Viper, Dark Knight, and Justice League.</p>';
 
     var infowindow = new google.maps.InfoWindow({
         content: contentString
@@ -40,10 +39,11 @@
 google.maps.event.addDomListener(window, 'load', initMap);
 </script>
 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYsouagwj_KvlqIJ8yFFGv2iV21YOm1-I&callback=initMap"
-  type="text/javascript"></script>
+/*<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYsouagwj_KvlqIJ8yFFGv2iV21YOm1-I&callback=initMap"
+  type="text/javascript"></script>*/
   
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYsouagwj_KvlqIJ8yFFGv2iV21YOm1-I&callback=initMap"
+    async defer></script>
 
 
 
