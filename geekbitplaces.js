@@ -6,7 +6,8 @@
     // Navy Pier (41.8916244,-87.6116684)
     
     var geek = document.getElementById('hangouts');
-    var geekbitplaces = new google.maps.LatLng(42.3704366,-87.938236);
+    //var geekbitplaces = new google.maps.LatLng(42.3704366,-87.938236);
+    var geekplaces = {lat: 42.3704366, lng: -87.938236}
     var mapOptions = {
       center: geekbitplaces,
       zoom: 15,
@@ -19,16 +20,16 @@
     var geekMap = new google.maps.Map(geek, mapOptions);
 
     var geekpoint = new google.maps.Marker({
-      position: geekbitplaces,
+      position: geekplaces,
       map: geekMap,
       animation: google.maps.Animation.BOUNCE,
-      icon: '/images/geekbiticon.png'
+      icon: 'geekbiticon.png'
     });
 
-    var contentString = '<h1>Six Flags Great America</h1><p>Best places here are Hurricane Harbor, the Whizzer, American Eagle, the Viper, Dark Knight, and Justice League.</p>';
+    var infostring = '<h1>Six Flags Great America</h1><p>Best places here are Hurricane Harbor, the Whizzer, American Eagle, the Viper, Dark Knight, and Justice League.</p>';
 
     var infowindow = new google.maps.InfoWindow({
-        content: contentString
+        content: infostring
       });
 
     google.maps.event.addListener(marker, 'mouseover', function() {
@@ -42,8 +43,8 @@ google.maps.event.addDomListener(window, 'load', initMap);
 /*<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYsouagwj_KvlqIJ8yFFGv2iV21YOm1-I&callback=initMap"
   type="text/javascript"></script>*/
   
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYsouagwj_KvlqIJ8yFFGv2iV21YOm1-I&callback=initMap"
-    async defer></script>
+/*<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYsouagwj_KvlqIJ8yFFGv2iV21YOm1-I&callback=initMap"
+    async defer></script>*/
 
 
 
