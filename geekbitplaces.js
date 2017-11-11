@@ -1,23 +1,23 @@
-function init()
+function initMap()
 {
 	// Bristol Renaissance Faire (42.4963589,-87.9583877), Six Flags Great America (42.3704366,-87.938236), 
   // Museum of Science and Industry (41.7905766,-87.5852546), Christkindlmarket (41.8839693,-87.632672),
   // Navy Pier (41.8916244,-87.6116684)
-	var el = document.getElementById('hangouts');
+	var geek = document.getElementById('hangouts');
 	var geekbitplaces = new google.maps.LatLng(42.3704366,-87.938236);
 	var mapOptions = {
 		center: geekbitplaces,
-		zoom: 18,
+		zoom: 15,
 		mapTypeId: google.maps.MapTypeId.SATELLITE,
 		mapTypeControlOptions: {
 			position: google.maps.ControlPosition.BOTTOM_CENTER
 		}
 	};
 
-	var geekMap = new google.maps.Map(el, mapOptions);
+	var geekMap = new google.maps.Map(geek, mapOptions);
 
 	var geekpoint = new google.maps.Marker({
-    position: myLocation,
+    position: geekbitplaces,
 		map: geekMap,
 		animation: google.maps.Animation.BOUNCE,
 		icon: '/images/geekbiticon.png'
