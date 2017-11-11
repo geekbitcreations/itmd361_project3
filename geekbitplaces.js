@@ -20,7 +20,7 @@ function init()
     position: myLocation,
 		map: geekMap,
 		animation: google.maps.Animation.BOUNCE,
-		icon: '/images/geekbitlocator.png'
+		icon: '/images/geekbiticon.png'
 	});
 
 	var contentString = '<h1>Bristol Renaissance Faire</h1>';
