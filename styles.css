@@ -133,12 +133,13 @@ footer p{
   margin-bottom: 10px;
 }
 
-#hangouts {
-			width: 500px;
-			height: 300px;
-			background-color: #CCCCCC;
-			margin: 30px auto;
-		}
+#map {
+	width: 500px;
+	height: 300px;
+  position: relative;
+	background-color: #CCCCCC;
+	margin: 30px auto;
+}
 
 /* CSS layout for the projects page. */
 main {
