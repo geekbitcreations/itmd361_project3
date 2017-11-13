@@ -21,10 +21,10 @@ function initMap()
   };
 
   //var geekMap = new google.maps.Map(geek, mapOptions);
-  var map = new google.maps.Map(document.getElementById('map', mapOptions);
+  var map = new google.maps.Map(document.getElementById('map', mapOptions));
 
   var markerOptions = new google.maps.Marker({
-    position: geekplaces1, geekplaces2, geekplaces3, geekplaces4, geekplaces5,
+    position: geekplaces1,
     //position: new google.maps.LatLng(42.3704366,-87.938236)
     map: map,
     animation: google.maps.Animation.BOUNCE,
@@ -37,7 +37,8 @@ function initMap()
   //var infostring = '<h1>Six Flags Great America</h1><p>Best places here are Hurricane Harbor, the Whizzer, American Eagle, the Viper, Dark Knight, and Justice League.</p>';
 
   var infoWindowOptions = new google.maps.InfoWindow({
-    content: '<h1>Six Flags Great America</h1><p>Best places here are Hurricane Harbor, the Whizzer, American Eagle, the Viper, Dark Knight, and Justice League.</p>'
+    content: '<h1>Six Flags Great America</h1>
+    <p>Best places here are Hurricane Harbor, the Whizzer, American Eagle, the Viper, Dark Knight, and Justice League.</p>'
   });
 
   var infoWindow = new google.maps.InfoWindow(infoWindowOptions);
@@ -55,7 +56,3 @@ google.maps.event.addDomListener(window, 'load', initMap);
   
 /*<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYsouagwj_KvlqIJ8yFFGv2iV21YOm1-I&callback=initMap"
     async defer></script>*/
-
-
-
-// AIzaSyDYsouagwj_KvlqIJ8yFFGv2iV21YOm1-I
