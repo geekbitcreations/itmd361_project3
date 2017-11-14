@@ -1,6 +1,6 @@
 function initMap() {
   // Six Flags Great America
-  var geekplaces1 = {
+  /*var geekplaces1 = {
     info: '<strong><h1>Six Flags Great America</h1></strong><p>Favorite rides: Hurricane Harbor, Whizzer, American Eagle, Viper, Dark Knight, and Justice League: Battle for Metropolis.</p>',
     lat: 42.372559,
     lng: -87.938236
@@ -40,7 +40,7 @@ function initMap() {
     [geekplaces3.info, geekplaces3.lat, geekplaces3.lng, 2],
     [geekplaces4.info, geekplaces4.lat, geekplaces4.lng, 3],
     [geekplaces5.info, geekplaces5.lat, geekplaces5.lng, 4],
-  ];
+  ];*/
   
   var map = new google.maps.Map(document.getElementById('map', mapOptions), {
     zoom: 12,
@@ -65,23 +65,23 @@ function initMap() {
     }
   };
     
-  /*var infoString = '<h1>Six Flags Great America</h1><p>Favorite rides: Hurricane Harbor, Whizzer, American Eagle, Viper, Dark Knight, and Justice League: Battle for Metropolis.</p>';
+  var infoString = '<strong><h1>Six Flags Great America</h1></strong><p>Favorite rides: Hurricane Harbor, Whizzer, American Eagle, Viper, Dark Knight, and Justice League: Battle for Metropolis.</p>';
 
   var infoWindow = new google.maps.InfoWindow({
       content: infoString
-  	});*/
+  	});
     
-  var infoWindow = new google.maps.InfoWindow({});
+ // var infoWindow = new google.maps.InfoWindow({});
   
-  var placeMarker, i;
+  //var placeMarker, i;
   
-  for (i = 0; i < locations.length; i++) {
+  /*for (i = 0; i < locations.length; i++) {
     placeMarker = new google.maps.Marker({
       position: new google.maps.LatLng(locations[i][1], locations[i][2]),
       map: map
     });
     
-    /*google.maps.event.addListener(placeMarker, 'click', (function (placeMarker, i) {
+    google.maps.event.addListener(placeMarker, 'click', (function (placeMarker, i) {
         infoWindow.setContent(locations[i][0]);
         infoWindow.open(map, placeMarker);
       )};*/

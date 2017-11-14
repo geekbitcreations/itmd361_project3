@@ -120,8 +120,8 @@ footer p{
   float: right;
   position: relative;
   top: 100px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5x;
+  margin-bottom: 5px;
 }
 
 #right2 {
@@ -129,7 +129,7 @@ footer p{
   float: right;
   position: relative;
   top: 200px;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 10px;
 }
 
@@ -138,7 +138,7 @@ footer p{
 	height: 500px;
   position: relative;
 	background-color: #E0EBEE;
-	margin: 30px auto;
+	margin: 20px auto;
 }
 
 /* CSS layout for the projects page. */
