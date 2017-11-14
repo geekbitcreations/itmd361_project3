@@ -62,23 +62,13 @@ var geekplaces3 = {lat: 41.7905766, lng: -87.5852546}; // Museum of Science and 
 var geekplaces4 = {lat: 41.8839693, lng: -87.632672}; // Christkindlmarket
 var geekplaces5 = {lat: 41.8916244, lng: -87.6116684}; // Navy Pier
 */
-/*var geekplaces = [
-  ['Six Flags Great America', 42.372559, -87.938236, 1],
-  ['Bristol Renaissance', 42.4963589, -87.9583877, 2],
-  ['Museum of Science and Industry', 41.7905766, -87.5852546, 3],
-  ['Christkindlmarket', 41.8839693, -87.632672, 4],
-  ['Navy Pier', 41.8916244, -87.6116684, 5]
-];*/
-    
-//var marker;
 
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map', mapOptions), {
-    zoom: 13,
+    zoom: 12,
     center: {lat: 42.372559, lng: -87.938236}
   });
   
-  //setMarkers(map);
   var image = 'geekbiticon.png';
   var placeMarker = new google.maps.Marker({
     position: {lat: 42.372559,lng: -87.938236},
@@ -87,9 +77,7 @@ function initMap() {
     animation: google.maps.Animation.DROP,
     icon: image
   });
-  
-  //var map = new google.maps.Map(document.getElementById('map', mapOptions));
-  
+    
   var mapOptions = {
     center: new google.maps.LatLng(42.372559,-87.938236),
     zoom: 12,
@@ -98,15 +86,9 @@ function initMap() {
       position: google.maps.ControlPosition.BOTTOM_CENTER
     }
   };
-  
-  
+    
   var infoString = '<h1>Six Flags Great America</h1><p>Favorite rides: Hurricane Harbor, Whizzer, American Eagle, Viper, Dark Knight, and Justice League: Battle for Metropolis.</p>';
-  
-  /*var infoWindowOptions = new google.maps.InfoWindow({
-    content: infoString
-  });*/
 
-  //var infoWindow = new google.maps.InfoWindow(infoWindowOptions);
   var infoWindow = new google.maps.InfoWindow({
       content: infoString
   	});
