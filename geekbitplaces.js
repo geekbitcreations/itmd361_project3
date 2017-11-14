@@ -99,13 +99,19 @@ function initMap() {
     }
   };
   
-  var infoWindowOptions = new google.maps.InfoWindow({
-    content: '<h1>Six Flags Great America</h1><p>Best places here are Hurricane Harbor, the Whizzer, American Eagle, the Viper, Dark Knight, and Justice League.</p>'
-  });
+  
+  var infoString = '<h1>Six Flags Great America</h1><p>Favorite rides: Hurricane Harbor, Whizzer, American Eagle, Viper, Dark Knight, and Justice League: Battle for Metropolis.</p>';
+  
+  /*var infoWindowOptions = new google.maps.InfoWindow({
+    content: infoString
+  });*/
 
-  var infoWindow = new google.maps.InfoWindow(infoWindowOptions);
+  //var infoWindow = new google.maps.InfoWindow(infoWindowOptions);
+  var infoWindow = new google.maps.InfoWindow({
+      content: infoString
+  	});
     
-  google.maps.event.addListener(placeMarker, 'click', function(e) {
+  google.maps.event.addListener(placeMarker, 'mouseover', function(e) {
     infoWindow.open(map, placeMarker);
   });
   
