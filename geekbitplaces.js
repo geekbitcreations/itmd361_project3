@@ -100,6 +100,9 @@ function initMap() {
   placeMarker.addListener('click', toggleBounce);
 }
 
+
+google.maps.event.addDomListener(window, 'load', initMap);
+
 function toggleBounce() {
   if (placeMarker.getAnimation() !== null) {
     placeMarker.setAnimation(null);
