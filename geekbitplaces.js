@@ -1,4 +1,4 @@
-function init()
+/*function init()
 {
   var geek = document.getElementById('map');
   var geekbitplaces = new google.maps.LatLng(42.3704366,-87.938236);
@@ -48,7 +48,7 @@ function init()
 }
 
 google.maps.event.addDomListener(window, 'load', init);
-
+*/
 
 /*<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYsouagwj_KvlqIJ8yFFGv2iV21YOm1-I&callback=initMap"
   type="text/javascript"></script>*/
@@ -56,19 +56,19 @@ google.maps.event.addDomListener(window, 'load', init);
 /*<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYsouagwj_KvlqIJ8yFFGv2iV21YOm1-I&callback=initMap"
     async defer></script>*/
 
-/*var geekplaces1 = {lat: 42.3704366, lng: -87.938236}; // Six Flags Great America
+var geekplaces1 = {lat: 42.3704366, lng: -87.938236}; // Six Flags Great America
 var geekplaces2 = {lat: 42.4963589, lng: -87.9583877}; // Bristol Renaissance Faire
 var geekplaces3 = {lat: 41.7905766, lng: -87.5852546}; // Museum of Science and Industry
 var geekplaces4 = {lat: 41.8839693, lng: -87.632672}; // Christkindlmarket
 var geekplaces5 = {lat: 41.8916244, lng: -87.6116684}; // Navy Pier
 
-var geekplaces = [
-  ['Six Flags Great America', lat: 42.3704366, lng: -87.938236, 1]
-  ['Bristol Renaissance', lat: 42.3704366, lng: -87.938236, 1]
-  ['Six Flags Great America', lat: 42.3704366, lng: -87.938236, 1]
-  ['Six Flags Great America', lat: 42.3704366, lng: -87.938236, 1]
-  ['Six Flags Great America', lat: 42.3704366, lng: -87.938236, 1]
-  
+/*var geekplaces = [
+  ['Six Flags Great America', 42.3704366, -87.938236, 1],
+  ['Bristol Renaissance', 42.4963589, -87.9583877, 2],
+  ['Museum of Science and Industry', 41.7905766, -87.5852546, 3],
+  ['Christkindlmarket', 41.8839693, -87.632672, 4],
+  ['Navy Pier', 41.8916244, -87.6116684, 5]
+];*/
     
 var marker;
 
@@ -77,16 +77,48 @@ function initMap() {
     zoom: 13,
     center: {lat: 42.3704366, lng: -87.938236}
   });
-
-  marker = new google.maps.Marker({
+  
+  //setMarkers(map);
+  var image = 'geekbiticon.png';
+  var placeMarker = new google.maps.Marker({
+    position: {lat: 42.3704366, lng: -87.938236},
+    map: map,
+    icon: image
+  });
+  
+  /*marker = new google.maps.Marker({
     map: map,
     draggable: true,
     animation: google.maps.Animation.DROP,
     position: {lat: 42.3704366, lng: -87.938236}
     //icon: '/images/geekbiticon.png'
-  });
-  marker.addListener('click', toggleBounce);
+  });*/
+  placeMarker.addListener('click', toggleBounce);
 }
+
+/*function setMarkers(map) {
+var image = {
+  url: '/images/geekbiticon.png',
+  size: new google.maps.Size(20, 32),
+  origin: new google.maps.Point(0, 0),
+  anchor: new google.maps.Point(0, 32)
+};
+
+var shape = {
+  coords: [1, 1, 1, 20, 18, 20, 18, 1],
+  type: 'poly'
+};
+for (var i = 0; i < geekplaces.length; i++) {
+  var place = geekplaces[i];
+  var marker = new google.maps.Marker({
+    position: {lat: place[1], lng: place[2]},
+    map: map,
+    icon: image,
+    shape: shape,
+    title: place[0],
+    zIndex: place[3]
+  });
+}*/
 
 function toggleBounce() {
   if (marker.getAnimation() !== null) {
@@ -96,4 +128,4 @@ function toggleBounce() {
   else {
     marker.setAnimation(google.maps.Animation.BOUNCE);
   }
-}*/
+}
