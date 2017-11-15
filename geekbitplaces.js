@@ -37,9 +37,9 @@ function initMap() {
     lat: 41.8916244, 
     lng: -87.6116684
     icon: 'geekbiticon.png'
-  };
+  };*/
 
-  var locations = [
+  /*var locations = [
     [geekplaces1.info, geekplaces1.lat, geekplaces1.lng, 0],
     [geekplaces2.info, geekplaces2.lat, geekplaces2.lng, 1],
     [geekplaces3.info, geekplaces3.lat, geekplaces3.lng, 2],
@@ -124,11 +124,11 @@ function initMap() {
       content: infoString
   	});
     
-  //var infoWindow = new google.maps.InfoWindow({});
+  /*var infoWindow = new google.maps.InfoWindow({});
   
-  //var placeMarker, i;
+  var placeMarker, i;
   
-  /*for (i = 0; i < locations.length; i++) {
+  for (i = 0; i < locations.length; i++) {
     placeMarker = new google.maps.Marker({
       position: new google.maps.LatLng(locations[i][1], locations[i][2]),
       map: map
