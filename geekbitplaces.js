@@ -4,6 +4,7 @@ function initMap() {
     info: '<strong><h1>Six Flags Great America</h1></strong><p>Favorite rides: Hurricane Harbor, Whizzer, American Eagle, Viper, Dark Knight, and Justice League: Battle for Metropolis.</p>',
     lat: 42.372559,
     lng: -87.938236
+    icon: 'geekbiticon.png'
   }; 
 
   // Bristol Renaissance Faire
@@ -11,6 +12,7 @@ function initMap() {
     info: '<strong><h1>Brisol Renaissance Faire</h1></strong><p>Favorite places: Jousting, Mud Show, Barely Balanced, The Swordsmen, Moonie, great food, costumes, and The Fantasticals.</p>',
     lat: 42.4963589, 
     lng: -87.9583877
+    icon: 'geekbiticon.png'
   }; 
 
   // Museum of Science and Industry
@@ -18,6 +20,7 @@ function initMap() {
     info: '<strong><h1>Museum of Science and Industry</h1></strong><p>Favorite places: Tornado, Coal Mine, Fairy Castle, Trees Around the World, Revolution, Jurassic World, and Toy Master.</p>',
     lat: 41.7905766, 
     lng: -87.5852546
+    icon: 'geekbiticon.png'
   };
 
   // Christkindlmarket
@@ -25,6 +28,7 @@ function initMap() {
     info: '<strong><h1>Christkindlmarket</h1></strong><p>Favorite places: shopping, the great food, hot cider, ornaments, and caroling.</p>',
     lat: 41.8839693, 
     lng: -87.632672
+    icon: 'geekbiticon.png'
   }; 
 
   // Navy Pier
@@ -32,9 +36,10 @@ function initMap() {
     info: '<strong><h1>Navy Pier/h1></strong><p>Favorite places: Winter Wonderfest, ferris wheel, and the garden.</p>',
     lat: 41.8916244, 
     lng: -87.6116684
-  }; 
+    icon: 'geekbiticon.png'
+  };*/
 
-  var locations = [
+  /*var locations = [
     [geekplaces1.info, geekplaces1.lat, geekplaces1.lng, 0],
     [geekplaces2.info, geekplaces2.lat, geekplaces2.lng, 1],
     [geekplaces3.info, geekplaces3.lat, geekplaces3.lng, 2],
@@ -71,7 +76,7 @@ function initMap() {
       content: infoString
   	});
     
- // var infoWindow = new google.maps.InfoWindow({});
+  //var infoWindow = new google.maps.InfoWindow({});
   
   //var placeMarker, i;
   
