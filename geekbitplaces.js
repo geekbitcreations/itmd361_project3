@@ -37,9 +37,9 @@ function initMap() {
     lat: 41.8916244, 
     lng: -87.6116684
     icon: 'geekbiticon.png'
-  };*/
+  };
 
-  /*var locations = [
+  var locations = [
     [geekplaces1.info, geekplaces1.lat, geekplaces1.lng, 0],
     [geekplaces2.info, geekplaces2.lat, geekplaces2.lng, 1],
     [geekplaces3.info, geekplaces3.lat, geekplaces3.lng, 2],
@@ -47,14 +47,62 @@ function initMap() {
     [geekplaces5.info, geekplaces5.lat, geekplaces5.lng, 4],
   ];*/
   
+  var geekplaces1 = {lat: 42.372559, lng: -87.938236};
+  var geekplaces2 = {lat: 42.4963589, lng: -87.9583877};
+  var geekplaces3 = {lat: 41.7905766, lng: -87.5852546};
+  var geekplaces4 = {lat: 41.8839693, lng: -87.632672};
+  var geekplaces5 = {lat: 41.8916244, lng: -87.6116684};
+  
+  
   var map = new google.maps.Map(document.getElementById('map', mapOptions), {
-    zoom: 12,
-    center: {lat: 42.372559, lng: -87.938236}
+    zoom: 9,
+    //center: {lat: 42.372559, lng: -87.938236}
+    center: geekplaces1
   });
   
   var image = 'geekbiticon.png';
-  var placeMarker = new google.maps.Marker({
+  /*var placeMarker = new google.maps.Marker({
     position: {lat: 42.372559,lng: -87.938236},
+    map: map,
+    //draggable: true,
+    animation: google.maps.Animation.DROP,
+    icon: image
+  });*/
+  
+  var placeMarker1 = new google.maps.Marker({
+    position: geekplaces1,
+    map: map,
+    //draggable: true,
+    animation: google.maps.Animation.DROP,
+    icon: image
+  });
+  
+  var placeMarker2 = new google.maps.Marker({
+    position: geekplaces2,
+    map: map,
+    //draggable: true,
+    animation: google.maps.Animation.DROP,
+    icon: image
+  });
+  
+  var placeMarker3 = new google.maps.Marker({
+    position: geekplaces3,
+    map: map,
+    //draggable: true,
+    animation: google.maps.Animation.DROP,
+    icon: image
+  });
+  
+  var placeMarker4 = new google.maps.Marker({
+    position: geekplaces4,
+    map: map,
+    //draggable: true,
+    animation: google.maps.Animation.DROP,
+    icon: image
+  });
+  
+  var placeMarker5 = new google.maps.Marker({
+    position: geekplaces5,
     map: map,
     //draggable: true,
     animation: google.maps.Animation.DROP,
@@ -63,7 +111,7 @@ function initMap() {
     
   var mapOptions = {
     center: new google.maps.LatLng(42.372559,-87.938236),
-    zoom: 12,
+    zoom: 9,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     mapTypeControlOptions: {
       position: google.maps.ControlPosition.BOTTOM_CENTER
@@ -91,8 +139,8 @@ function initMap() {
         infoWindow.open(map, placeMarker);
       )};*/
     
-  google.maps.event.addListener(placeMarker, 'mouseover', function(e) {
-    infoWindow.open(map, placeMarker);
+  google.maps.event.addListener(placeMarker1, 'mouseover', function(e) {
+    infoWindow.open(map, placeMarker1);
   });
   
   /*marker = new google.maps.Marker({
