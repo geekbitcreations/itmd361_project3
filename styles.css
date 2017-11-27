@@ -146,6 +146,12 @@ footer p{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+@media (max-width: 600px) {
+  #navmenu, #navmenu ul li, .column, #left, #right1, #right2 {
+    width: 100%;
+  }
+}
+
 /* CSS layout for the projects page. */
 main {
   max-width: 1500px;
