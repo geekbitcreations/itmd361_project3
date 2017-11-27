@@ -15,18 +15,22 @@ body {
   top: 0;
   margin-top: 20px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 #navmenu ul {
   list-style-type: none;
-  margin-left: 565px;
+  margin-left: 260px;
+  width: 100%;
   padding: 0;
   overflow: hidden;
+  text-align: center;
 }
 
 #navmenu ul li {
   float: left;
   text-align: center;
+  display: inline;
 }
 
 #navmenu ul li a {
@@ -146,8 +150,8 @@ footer p{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media (max-width: 600px) {
-  #navmenu, #navmenu ul li, .column, #left, #right1, #right2 {
+@media (max-width:500px) {
+  div.column {
     width: 100%;
   }
 }
