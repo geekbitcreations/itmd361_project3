@@ -124,7 +124,7 @@ footer p{
   overflow: auto;
   display: block;
   width: 65%;
-  float: right;
+  float: left;
   position: relative;
   top: 120px;
   margin-top: 5px;
