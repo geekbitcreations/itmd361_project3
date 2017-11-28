@@ -99,9 +99,9 @@ footer p{
 }
 
 .about {
-  width: 98%;
-  margin-top: 12px;
-  margin-bottom: 12px;
+  width: 65%;
+  margin-top: 5px;
+  margin-bottom: 5px;
   font-size: 16px;
 }
 
@@ -113,31 +113,32 @@ footer p{
 }
 
 #left {
+  display: block;
   width: 35%;
   float: left;
   position: relative;
   margin-bottom: 20px;
 }
 
-#right1 {
+#right {
   display: block;
   width: 65%;
   float: right;
   position: relative;
-  top: 100px;
+  top: 120px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-#right2 {
+/*#right2 {
   display: block;
   width: 65%;
   float: right;
   position: relative;
-  top: 200px;
+  top: 165px;
   margin-top: 5px;
   margin-bottom: 10px;
-}
+}*/
 
 .homepic {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -152,8 +153,8 @@ footer p{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media (max-width:600px) {
-  div.column {
+@media screen(max-width:600px) {
+  #right {
     width: 100%;
   }
 }
