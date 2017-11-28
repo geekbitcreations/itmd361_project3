@@ -113,14 +113,15 @@ footer p{
 }
 
 #left {
+  overflow: auto;
   display: block;
   width: 35%;
   float: left;
   position: relative;
-  margin-bottom: 20px;
 }
 
 #right {
+  overflow: auto;
   display: block;
   width: 65%;
   float: right;
@@ -153,8 +154,8 @@ footer p{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media screen(max-width:600px) {
-  #right {
+@media screen (max-width:600px) {
+  .column {
     width: 100%;
   }
 }
