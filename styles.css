@@ -125,7 +125,7 @@ footer p{
   display: block;
   width: 65%;
   float: left;
-  position: relative;
+  /*position: relative;*/
   top: 120px;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -142,23 +142,29 @@ footer p{
 }*/
 
 .homepic {
+  width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#mapcon {
+  clear: both;
+  width: 700px;
+	height: 500px;
+  margin: 25px auto;
+
 }
 
 #map {
-	width: 700px;
-	height: 500px;
-  position: relative;
+	width: 100%;
+	height: 100%;
 	background-color: #E0EBEE;
-	margin: 25px auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media screen (max-width:600px) {
+/*@media screen (max-width: 600px) {
   .column {
     width: 100%;
   }
-}
+}*/
 
 /* CSS layout for the projects page. */
 main {
